@@ -1,0 +1,11 @@
+* {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Signika', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    word-spacing: 0.2rem;
+    font-size: 1.03rem;
+
+}
+.nav_bar_back {
+    background-color: rgb(65, 6, 73);
+}
