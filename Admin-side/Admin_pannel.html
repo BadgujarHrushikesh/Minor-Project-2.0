@@ -18,22 +18,14 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- Style -->
-  <style>
-    * {
-      font-family: 'Satisfy', cursive;
-      font-family: 'Signika', sans-serif;
-      font-family: 'Source Serif Pro', serif;
-      word-spacing: 0.2rem;
-      font-size: 1.03rem;
-
-    }
+  
   </style>
   <title>E-Vidya | Admin Pannel | Home</title>
 </head>
 
 <body>
   <div class="heading" style="background-color: #ffc107;height:3rem;width: 100vw;">
-    <h2 style="text-align: center; padding: 0.4rem;">E-Vidya Administrator Pannel</h2>
+    <h2 style="text-align: center; padding: 0.4rem;">E-Vidya Admin Pannel</h2>
   </div>
   <!-- navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark nav_bar_back"
@@ -51,11 +43,11 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost/E-vidya-Minor-Project/file-upload-download-1/" target="_blank">Publish Notes</a>
+            <a class="nav-link" href="http://localhost/E-vidya-Minor-Project/file-upload-download-1/" >Publish Notes</a>
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost/E-vidya-Minor-Project/notice-upload/" target="_blank">Publish Notice</a>
+            <a class="nav-link" href="http://localhost/E-vidya-Minor-Project/file-upload-download-2/" >Publish Notice</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://localhost/E-vidya-Minor-Project/file-upload-download-1/upload/">Upload History</a>
@@ -65,9 +57,9 @@
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-outline-warning  m-2" style="width:10rem; ;" type="button" data-bs-toggle="modal"
+          <!-- <button class="btn btn-outline-warning  m-2" style="width:10rem; ;" type="button" data-bs-toggle="modal"
             data-bs-target="#Aprofilemodal"><i class="bi bi-person-circle"></i>
-            &nbsp;Profile</button>
+            &nbsp;Profile</button> -->
           <button class="btn btn-outline-warning  m-2" style="width:10rem; ;" type="submit"><i
               class="bi bi-box-arrow-right"></i> &nbsp;Logout</button>
         </form>
@@ -119,7 +111,7 @@
     <div class="header">
       <h2 style="color: white;text-align: center;padding: 1rem;">Welcome At Admin Pannel....!</h2>
     </div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="row g-2">
         <div class="col-6">
           <div class="p-3 border bg-light rounded-3">
@@ -164,9 +156,46 @@
           </div>
         </div>
       </div>
+    </div> -->
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="../images/notes.jpg" class="card-img-top" alt="..." style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Upload Study Resources</h5>
+             <button onclick="window.location.href='http://localhost/E-vidya-Minor-Project/file-upload-download-1/'"class="btn btn-primary float-end"">Upload Notes</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../images/notice.jpg" class="card-img-top" alt="..."style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Upload Notice</h5>
+            <button onclick="window.location.href='http://localhost/E-vidya-Minor-Project/file-upload-download-2/'" class="btn btn-primary float-end">Upload Notice</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../images/history.jpg" class="card-img-top" alt="..." style="height: 200px;" >
+          <div class="card-body">
+            <h5 class="card-title">Upload History</h5>
+            <button onclick="window.location.href='http://localhost/E-vidya-Minor-Project/file-upload-download-1/upload/'" class="btn btn-primary float-end">Upload History</button>   </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../images/remove.jpg" class="card-img-top" alt="..." style="height: 200px;">
+          <div class="card-body">
+            <h5 class="card-title">Remove Notes</h5>
+            <button onclick="window.location.href='#'" class="btn btn-primary float-end" >Remove Notice</button>   </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
+</div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

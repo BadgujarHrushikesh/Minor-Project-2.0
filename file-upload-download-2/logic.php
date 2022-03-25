@@ -7,7 +7,7 @@
 	  $type=$_FILES['file']['type'];
 	  $temp=$_FILES['file']['tmp_name'];
 	  $fname = date("YmdHis").'_'.$name;
-	  $chk = $conn->query("SELECT * FROM  upload-notice where name = '$name' ")->rowCount();
+	  $chk = $conn->query("SELECT * FROM  `upload-notice` where name = '$name' ")->rowCount();
 	  if($chk){
 	    $i = 1;
 	    $c = 0;
@@ -24,7 +24,7 @@
 	}
 	 $move =  move_uploaded_file($temp,"upload/".$fname);
 	 if($move){
-	 	$query=$conn->query("insert into upload-notice(`title`,`name`,`fname`)values('$title','$name','$fname')");
+	 	$query=$conn->query("INSERT into `upload-notice`(`title`,`name`,`fname`)values('$title','$name','$fname')");
 		if($query){
 		header("location:index.php");
 		}

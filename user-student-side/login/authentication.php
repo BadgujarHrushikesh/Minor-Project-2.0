@@ -15,9 +15,12 @@
         $count = mysqli_num_rows($result);  
           
         if($count == 1){  
-            echo "<button><a href='http://localhost/E-vidya-Minor-Project/Admin-side/Admin_pannel.html'>click</a></button>";
+            echo "<script> location.href='http://localhost/E-vidya-Minor-Project/Admin-side/Admin_pannel.html'; </script>";
         }  
         else{  
-            echo "<h1> Login failed. Invalid username or password.</h1>";  
+            // echo "<script> alert('Login failed. Invalid Username or Password.'); exit();</script>";  
+            echo '<script language="javascript">';
+            echo 'alert("Login failed. Invalid Username or Password. GO back And Relogin")';
+            echo '</script>';
         }     
 ?>  

@@ -1,0 +1,15 @@
+* {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Signika', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    word-spacing: 0.2rem;
+    font-size: 1.03rem;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(28, 221, 255);
+}

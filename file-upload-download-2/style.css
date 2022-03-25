@@ -1,4 +1,3 @@
-
 * {
     
     font-family: 'Satisfy', cursive;
@@ -29,6 +28,7 @@ img{
     linear-gradient(336deg, #06800c, rgba(0,0,255,0) 70.71%);  
     height:100vh;
     width:100vw;
+    
 }
 
 .footer-back{

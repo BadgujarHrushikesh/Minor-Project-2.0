@@ -17,9 +17,11 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Satisfy&family=Signika:wght@500&family=Source+Serif+Pro:wght@600&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="notice-download.css">
     <title>Notice Section</title>
 </head>
 <body>
+
      <!-- Cards For Notice -->
      <div class="row m-2">
         <div class="col-sm-4">
@@ -28,17 +30,17 @@
                     <h5 class="card-header bg-transparent border-success text-warning">Notices</h5>
                     <div>
                         <marquee behavior="" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
-
                             <ul>
-                            <?php
-                                $query=$conn->query("select * from upload order by id desc");
+                                <?php
+                                $query=$conn->query("SELECT * FROM `upload-notice` order by id desc");
                                 while($row=$query->fetch()){
                                     $name=$row['name'];
                                     $title=$row['title'];
-                                    $desc=$row['desc'];
-                            ?>
-                            <li><a href="download.php?filename=<?php echo $name;?>&f=<?php echo $row['fname'] ?>">Download</a></li>
-                            <?php }?>
+                                ?>
+                                <li>
+                                    <a href="download.php?filename=<?php echo $name;?>&f=<?php echo $row['fname'] ?>"><?php echo $title ;?></a>
+                                </li> 
+                                <?php }?>
                             </ul>
                         </marquee>
                     </div>
@@ -48,3 +50,5 @@
     </div>
 </body>
 </html>
+
+
